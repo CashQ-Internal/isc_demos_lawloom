@@ -1,0 +1,11 @@
+isc_project_id = "78a14513-3571-44fb-95ce-33da3c8706fb"
+experiment_name = "deepseek-r1-llama-8b-grpo"
+gpus = 8
+compute_mode = "cycle"
+dataset_id_list = ["dcd83b80-6a90-4d8c-afda-1d858fd5676c"]
+command = '''
+source /root/.deepseek/bin/activate && 
+torchrun --nnodes=$NNODES --nproc-per-node=$N_PROC 
+--master_addr=$MASTER_ADDR --master_port=$MASTER_PORT --node_rank=$RANK 
+/root/isc-demos/deepseek/fsdp_grpo.py 
+--dataset-id dcd83b80-6a90-4d8c-afda-1d858fd5676c'''
