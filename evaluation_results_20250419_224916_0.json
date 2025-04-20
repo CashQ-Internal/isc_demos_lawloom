@@ -3,7 +3,7 @@
     "timestamp": "2025-04-19 23:33:26",
     "original_model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
     "finetuned_model": "/shared/artifacts/5252730d-213f-4038-8bfb-ad21f594e4ed/checkpoints/AtomicDirectory_checkpoint_69",
-    "evaluator_model": "gpt-4o",
+    "evaluator_model": "lawloom",
     "total_improvement_cases": 11,
     "total_cases": 300
   },
